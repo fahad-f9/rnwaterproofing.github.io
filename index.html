@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="RN Waterproofing Solutions – India's trusted waterproofing experts. Terrace, basement, bathroom, UG tank & garden waterproofing with 10-year warranty. Serving Delhi, UP, Haryana & all India."/>
+  <meta name="keywords" content="waterproofing Delhi NCR, terrace waterproofing, basement waterproofing, UG tank waterproofing, bathroom waterproofing, garden waterproofing, waterproofing contractor India"/>
+  <title>RN Waterproofing Solutions | 10 Year Warranty | Pan India</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:       #0d1f2d;
+      --navy-mid:   #152638;
+      --blue:       #1a5f8a;
+      --blue-light: #2480b8;
+      --sand:       #f5f1eb;
+      --sand-dark:  #ede7dd;
+      --white:      #ffffff;
+      --gray:       #6b7a8a;
+      --gray-light: #c8d0d8;
+      --text:       #0d1f2d;
+      --border:     #e2ddd6;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: var(--navy);
+      height: 66px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 6%;
+      border-bottom: 2px solid var(--blue);
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+      text-decoration: none;
+    }
+
+    .logo-top {
+      font-family: 'Fraunces', serif;
+      font-size: 1.45rem;
+      font-weight: 900;
+      color: var(--white);
+      letter-spacing: 0.5px;
+    }
+
+    .logo-top span { color: #5ab4e8; }
+
+    .logo-bottom {
+      font-size: 0.58rem;
+      letter-spacing: 3.5px;
+      color: rgba(255,255,255,0.35);
+      text-transform: uppercase;
+      margin-top: 3px;
+      font-weight: 400;
+    }
+
+    .nav-actions { display: flex; align-items: center; gap: 10px; }
+
+    .nav-num {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      letter-spacing: 0.3px;
+    }
+
+    .nav-num:hover { color: var(--white); }
+
+    .nav-divider {
+      width: 1px; height: 18px;
+      background: rgba(255,255,255,0.15);
+    }
+
+    .nav-cta {
+      background: var(--blue);
+      color: var(--white);
+      padding: 9px 20px;
+      border-radius: 4px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.3px;
+      transition: background 0.2s;
+    }
+
+    .nav-cta:hover { background: var(--blue-light); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      padding: 110px 6% 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 75% 40%, rgba(26,95,138,0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 10% 70%, rgba(26,95,138,0.1) 0%, transparent 60%);
+    }
+
+    /* Subtle water ripple rings */
+    .hero-ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgba(90,180,232,0.07);
+      right: -80px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .hero-ring:nth-child(1) { width: 500px; height: 500px; }
+    .hero-ring:nth-child(2) { width: 700px; height: 700px; border-color: rgba(90,180,232,0.05); }
+    .hero-ring:nth-child(3) { width: 900px; height: 900px; border-color: rgba(90,180,232,0.03); }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 660px;
+      animation: fadeUp 0.7s ease both;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(90,180,232,0.1);
+      border: 1px solid rgba(90,180,232,0.25);
+      color: #8ecfee;
+      padding: 5px 14px;
+      border-radius: 100px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      margin-bottom: 26px;
+    }
+
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+      color: var(--white);
+      line-height: 1.1;
+      font-weight: 900;
+      margin-bottom: 22px;
+      letter-spacing: -0.5px;
+    }
+
+    h1 .blue { color: #5ab4e8; }
+    h1 .dim { color: rgba(255,255,255,0.45); font-weight: 600; }
+
+    .hero-sub {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.75;
+      margin-bottom: 38px;
+      max-width: 500px;
+      font-weight: 300;
+    }
+
+    .hero-sub strong { color: rgba(255,255,255,0.85); font-weight: 500; }
+
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 52px; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      background: #25D366;
+      color: #fff;
+      padding: 14px 26px;
+      border-radius: 5px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+      box-shadow: 0 4px 18px rgba(37,211,102,0.2);
+    }
+
+    .btn-primary:hover { filter: brightness(1.08); transform: translateY(-1px); }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      background: transparent;
+      color: var(--white);
+      padding: 14px 26px;
+      border-radius: 5px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      text-decoration: none;
+      border: 1.5px solid rgba(255,255,255,0.2);
+      transition: all 0.2s;
+    }
+
+    .btn-outline:hover { border-color: rgba(255,255,255,0.5); background: rgba(255,255,255,0.04); }
+
+    .hero-stats {
+      display: flex;
+      gap: 0;
+      padding-top: 36px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      flex-wrap: wrap;
+      row-gap: 20px;
+    }
+
+    .stat {
+      padding-right: 32px;
+      margin-right: 32px;
+      border-right: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .stat:last-child { border-right: none; margin-right: 0; padding-right: 0; }
+
+    .stat-n {
+      font-family: 'Fraunces', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #5ab4e8;
+      display: block;
+      line-height: 1;
+    }
+
+    .stat-l {
+      font-size: 0.7rem;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-top: 3px;
+      display: block;
+      font-weight: 400;
+    }
+
+    /* ── TRUST BAR ── */
+    .trust {
+      background: var(--blue);
+      padding: 14px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.9);
+      letter-spacing: 0.3px;
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: 80px 6%; }
+
+    .s-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 10px;
+    }
+
+    .s-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.15;
+      margin-bottom: 14px;
+      letter-spacing: -0.3px;
+    }
+
+    .s-sub {
+      font-size: 0.95rem;
+      color: var(--gray);
+      line-height: 1.75;
+      font-weight: 300;
+      max-width: 500px;
+    }
+
+    /* ── SERVICES ── */
+    .services { background: var(--sand); }
+
+    .services-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 44px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .svc-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 28px 24px;
+      transition: all 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .svc-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--blue);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
+
+    .svc-card:hover {
+      border-color: var(--gray-light);
+      box-shadow: 0 8px 32px rgba(13,31,45,0.08);
+      transform: translateY(-3px);
+    }
+
+    .svc-card:hover::before { transform: scaleX(1); }
+
+    .svc-icon { font-size: 1.7rem; margin-bottom: 14px; }
+
+    .svc-card h3 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .svc-card p {
+      font-size: 0.85rem;
+      color: var(--gray);
+      line-height: 1.65;
+      font-weight: 300;
+    }
+
+    .svc-warranty {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--blue);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    /* ── WHY ── */
+    .why { background: var(--navy); }
+
+    .why .s-label { color: #5ab4e8; }
+    .why .s-title { color: var(--white); }
+    .why .s-sub { color: rgba(255,255,255,0.45); }
+
+    .why-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: center;
+      max-width: 1060px;
+      margin: 0 auto;
+    }
+
+    .why-list { margin-top: 36px; }
+
+    .why-item {
+      display: flex;
+      gap: 16px;
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .why-item:first-child { border-top: 1px solid rgba(255,255,255,0.06); }
+
+    .why-dot {
+      width: 8px; height: 8px;
+      background: var(--blue-light);
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+
+    .why-item h4 {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .why-item p {
+      font-size: 0.83rem;
+      color: rgba(255,255,255,0.4);
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    .warranty-card {
+      background: rgba(26,95,138,0.12);
+      border: 1px solid rgba(26,95,138,0.3);
+      border-radius: 12px;
+      padding: 48px 36px;
+      text-align: center;
+    }
+
+    .w-badge {
+      width: 150px; height: 150px;
+      border-radius: 50%;
+      background: var(--blue);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+      box-shadow: 0 0 0 14px rgba(26,95,138,0.1), 0 0 0 28px rgba(26,95,138,0.05);
+    }
+
+    .w-num {
+      font-family: 'Fraunces', serif;
+      font-size: 3.4rem;
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .w-text {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.65);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .warranty-card h3 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .warranty-card p {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.4);
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    /* ── COVERAGE ── */
+    .coverage { background: var(--sand); }
+
+    .coverage-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+      max-width: 900px;
+    }
+
+    .region-group { margin-top: 28px; }
+
+    .region-primary {
+      margin-bottom: 20px;
+    }
+
+    .region-label {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 10px;
+    }
+
+    .region-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+
+    .tag {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 5px 14px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--navy);
+    }
+
+    .tag.primary {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: var(--white);
+    }
+
+    .coverage-note {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 28px 24px;
+      margin-top: 8px;
+    }
+
+    .coverage-note h4 {
+      font-family: 'Fraunces', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .coverage-note p {
+      font-size: 0.84rem;
+      color: var(--gray);
+      line-height: 1.65;
+      font-weight: 300;
+    }
+
+    /* ── CONTACT ── */
+    .contact { background: var(--white); }
+
+    .contact-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      max-width: 1000px;
+      margin: 0 auto;
+      align-items: start;
+    }
+
+    .contact-perks { margin: 28px 0; display: flex; flex-direction: column; gap: 12px; }
+
+    .perk {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: var(--gray);
+    }
+
+    .perk-dot { width: 7px; height: 7px; background: var(--blue); border-radius: 50%; flex-shrink: 0; }
+
+    /* Phone numbers display */
+    .phones { margin-bottom: 28px; display: flex; flex-direction: column; gap: 10px; }
+
+    .phone-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.2s;
+      background: var(--sand);
+    }
+
+    .phone-row:hover { border-color: var(--blue); background: var(--white); }
+
+    .phone-icon { font-size: 1.1rem; }
+
+    .phone-info { flex: 1; }
+
+    .phone-num {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--navy);
+      display: block;
+    }
+
+    .phone-tag {
+      font-size: 0.68rem;
+      font-weight: 500;
+      color: var(--gray);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    /* FORM */
+    .cform {
+      background: var(--sand);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 36px 30px;
+    }
+
+    .cform-title {
+      font-family: 'Fraunces', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+
+    .cform-sub { font-size: 0.82rem; color: var(--gray); margin-bottom: 26px; }
+
+    .fg { margin-bottom: 14px; }
+
+    .fg label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 5px;
+    }
+
+    .fg input, .fg select, .fg textarea {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: 5px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      color: var(--text);
+      background: var(--white);
+      outline: none;
+      transition: border 0.2s;
+    }
+
+    .fg input:focus, .fg select:focus, .fg textarea:focus { border-color: var(--blue); }
+    .fg textarea { resize: vertical; height: 80px; }
+
+    .fsub {
+      width: 100%;
+      background: var(--navy);
+      color: var(--white);
+      border: none;
+      padding: 14px;
+      border-radius: 5px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 4px;
+      letter-spacing: 0.3px;
+    }
+
+    .fsub:hover { background: var(--blue); }
+
+    .fnote { text-align: center; font-size: 0.72rem; color: var(--gray); margin-top: 10px; }
+
+    .success-msg {
+      display: none;
+      text-align: center;
+      padding: 14px;
+      background: #e8f5e9;
+      border-radius: 6px;
+      color: #2e7d32;
+      font-weight: 500;
+      font-size: 0.85rem;
+      margin-top: 12px;
+    }
+
+    /* ── REVIEWS ── */
+    .reviews { background: var(--sand); }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+      margin: 40px 0;
+    }
+
+    .rev-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 26px 22px;
+    }
+
+    .stars { color: #f5a623; font-size: 0.82rem; letter-spacing: 2px; margin-bottom: 12px; }
+
+    .rev-card blockquote {
+      font-size: 0.87rem;
+      color: var(--gray);
+      line-height: 1.7;
+      font-style: italic;
+      margin-bottom: 18px;
+      font-weight: 300;
+    }
+
+    .reviewer { display: flex; align-items: center; gap: 10px; }
+
+    .r-av {
+      width: 36px; height: 36px;
+      background: var(--navy);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #5ab4e8;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .r-name { font-size: 0.85rem; font-weight: 600; color: var(--navy); }
+    .r-loc { font-size: 0.72rem; color: var(--gray); }
+
+    .review-leave {
+      background: var(--navy);
+      border-radius: 8px;
+      padding: 32px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .review-leave h3 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .review-leave p { font-size: 0.83rem; color: rgba(255,255,255,0.45); font-weight: 300; }
+
+    .btn-review {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--blue);
+      color: var(--white);
+      padding: 12px 22px;
+      border-radius: 5px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+
+    .btn-review:hover { background: var(--blue-light); }
+
+    /* ── FOUNDER ── */
+    .founder { background: var(--white); }
+
+    .founder-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 44px;
+      align-items: start;
+    }
+
+    .founder-av {
+      width: 90px; height: 90px;
+      background: var(--navy);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Fraunces', serif;
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: #5ab4e8;
+      flex-shrink: 0;
+    }
+
+    .founder-quote {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.3;
+      margin-bottom: 18px;
+      letter-spacing: -0.3px;
+    }
+
+    .founder-quote span { color: var(--blue); }
+
+    .founder-body {
+      font-size: 0.92rem;
+      color: var(--gray);
+      line-height: 1.8;
+      font-weight: 300;
+      margin-bottom: 24px;
+    }
+
+    .founder-name {
+      font-family: 'Fraunces', serif;
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: var(--navy);
+      letter-spacing: -0.3px;
+    }
+
+    .founder-title {
+      font-size: 0.75rem;
+      color: var(--gray);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-top: 3px;
+      font-weight: 400;
+    }
+
+    /* ── FLOAT ── */
+    .float {
+      position: fixed;
+      bottom: 20px; right: 20px;
+      z-index: 200;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .fbtn {
+      width: 50px; height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+
+    .fbtn:hover { transform: scale(1.08); }
+    .fwa { background: #25D366; }
+    .fcall { background: var(--navy); border: 2px solid var(--blue); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      padding: 52px 6% 28px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 50px;
+      max-width: 960px;
+      margin: 0 auto 36px;
+    }
+
+    .footer-logo { margin-bottom: 14px; }
+
+    .footer-desc {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.3);
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    .fcol h4 {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #5ab4e8;
+      margin-bottom: 16px;
+    }
+
+    .fcol a {
+      display: block;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.35);
+      text-decoration: none;
+      margin-bottom: 10px;
+      transition: color 0.2s;
+    }
+
+    .fcol a:hover { color: var(--white); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.07);
+      padding-top: 22px;
+      text-align: center;
+      font-size: 0.73rem;
+      color: rgba(255,255,255,0.2);
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+
+    .fade.in { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 820px) {
+      .why-inner, .contact-inner, .footer-grid, .founder-inner, .coverage-inner {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .nav-num, .nav-divider { display: none; }
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 2.5rem; }
+      .hero-stats { gap: 16px; }
+      .stat { padding-right: 16px; margin-right: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo">
+    <span class="logo-top">RN <span>Waterproofing</span></span>
+    <span class="logo-bottom">Solutions · Pan India</span>
+  </a>
+  <div class="nav-actions">
+    <a href="tel:+919891973959" class="nav-num">📞 98919 73959</a>
+    <div class="nav-divider"></div>
+    <a href="https://wa.me/917070812717?text=Hi%2C%20I%20need%20waterproofing%20services" target="_blank" class="nav-cta">Free Quote</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-content">
+    <div class="hero-pill">💧 Trusted Waterproofing Experts · Pan India</div>
+    <h1>
+      Leaking Roof?<br/>
+      <span class="blue">We Fix It.</span><br/>
+      <span class="dim">For Good.</span>
+    </h1>
+    <p class="hero-sub">
+      From terrace to basement, bathroom to underground tank — we handle every type of water leakage with <strong>certified materials</strong> and a <strong>10-year written warranty.</strong>
+    </p>
+    <div class="hero-btns">
+      <a href="https://wa.me/917070812717?text=Hi%2C%20I%20need%20waterproofing%20services" target="_blank" class="btn-primary">💬 WhatsApp for Free Quote</a>
+      <a href="tel:+919891973959" class="btn-outline">📞 Call Now</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-n">10</span>
+        <span class="stat-l">Year Warranty</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n">500+</span>
+        <span class="stat-l">Projects Done</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n">Pan</span>
+        <span class="stat-l">India Coverage</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n">Free</span>
+        <span class="stat-l">Site Inspection</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust">
+  <div class="trust-item">✅ 10-Year Written Warranty</div>
+  <div class="trust-item">🔍 Free Site Inspection</div>
+  <div class="trust-item">📍 Pan India Service</div>
+  <div class="trust-item">⚡ Response Within 2 Hours</div>
+  <div class="trust-item">🏆 500+ Satisfied Clients</div>
+</div>
+
+<!-- SERVICES -->
+<section class="services fade">
+  <div class="services-head">
+    <div>
+      <div class="s-label">What We Do</div>
+      <div class="s-title">Every Waterproofing<br/>Problem — Solved.</div>
+      <p class="s-sub">We cover all types of waterproofing with premium materials and a 10-year warranty on every job.</p>
+    </div>
+    <a href="https://wa.me/917070812717?text=Hi%2C%20I%20need%20waterproofing%20services" target="_blank" class="btn-primary" style="white-space:nowrap; align-self:flex-end;">Get Free Quote</a>
+  </div>
+  <div class="services-grid">
+    <div class="svc-card">
+      <div class="svc-icon">🏠</div>
+      <h3>Terrace & Roof Waterproofing</h3>
+      <p>Stop roof leakage before it cracks your slab and walls. Advanced coatings for flat and sloped roofs of all types.</p>
+      <span class="svc-warranty">★ 10 Year Warranty</span>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">🏗️</div>
+      <h3>Basement Waterproofing</h3>
+      <p>Eliminate seepage, dampness and flooding in basements permanently using barrier and injection systems.</p>
+      <span class="svc-warranty">★ 10 Year Warranty</span>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">🚿</div>
+      <h3>Bathroom Waterproofing</h3>
+      <p>Fix bathroom leakage seeping into floors below — minimal disruption, no tile breaking in most cases.</p>
+      <span class="svc-warranty">★ 10 Year Warranty</span>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">🌊</div>
+      <h3>Underground Water Tanks</h3>
+      <p>Waterproof UG tanks from the inside and outside to prevent contamination and structural damage.</p>
+      <span class="svc-warranty">★ 10 Year Warranty</span>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">🌿</div>
+      <h3>Garden & Landscape Waterproofing</h3>
+      <p>Protect rooftop gardens and planters from water penetration into the slab below using root-resistant membranes.</p>
+      <span class="svc-warranty">★ 10 Year Warranty</span>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">🧱</div>
+      <h3>Wall Dampness & Seepage</h3>
+      <p>Treat rising damp, salt efflorescence and wall moisture from the root — not just cosmetically covered.</p>
+      <span class="svc-warranty">★ 10 Year Warranty</span>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">🏢</div>
+      <h3>Commercial & Industrial</h3>
+      <p>Large-scale waterproofing for offices, factories, warehouses and high-rise structures anywhere in India.</p>
+      <span class="svc-warranty">★ 10 Year Warranty</span>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">🔧</div>
+      <h3>Expansion Joint Treatment</h3>
+      <p>Flexible sealant systems for construction joints, cracks and movement joints that prevent long-term leakage.</p>
+      <span class="svc-warranty">★ 10 Year Warranty</span>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">🛁</div>
+      <h3>Swimming Pool Waterproofing</h3>
+      <p>Repair and re-waterproof swimming pools, water features and decorative ponds to stop leaks and water loss.</p>
+      <span class="svc-warranty">★ 10 Year Warranty</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why fade">
+  <div class="why-inner">
+    <div>
+      <div class="s-label">Why Choose Us</div>
+      <div class="s-title">We Don't Just Patch.<br/>We Fix It Permanently.</div>
+      <p class="s-sub">Most waterproofing fails in 2 years because of cheap materials and poor workmanship. We use certified systems and back every job in writing.</p>
+      <div class="why-list">
+        <div class="why-item">
+          <div class="why-dot"></div>
+          <div>
+            <h4>ISI-Certified Premium Materials Only</h4>
+            <p>We never use market-grade shortcuts. Only industry-standard, tested compounds that actually last.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-dot"></div>
+          <div>
+            <h4>Trained & Experienced Team</h4>
+            <p>Our workers are trained specialists — not untrained daily laborers handed a brush.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-dot"></div>
+          <div>
+            <h4>Transparent Pricing, No Surprises</h4>
+            <p>Free site visit, detailed written quote before we begin. What we quote is what you pay.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-dot"></div>
+          <div>
+            <h4>Pan India Reach</h4>
+            <p>Based in Delhi NCR but we travel across India for the right project. No location is too far.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="warranty-card">
+      <div class="w-badge">
+        <span class="w-num">10</span>
+        <span class="w-text">Year Warranty</span>
+      </div>
+      <h3>Written Guarantee On Every Single Job</h3>
+      <p>If water returns within 10 years, we return — at absolutely zero cost to you. No arguments, no excuses. That is our commitment in writing.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COVERAGE -->
+<section class="coverage fade">
+  <div class="coverage-inner">
+    <div>
+      <div class="s-label">Where We Work</div>
+      <div class="s-title">Serving Across India</div>
+      <p class="s-sub">Primarily operating across North India, but available for projects anywhere in the country.</p>
+      <div class="region-group">
+        <div class="region-primary">
+          <div class="region-label">Primary Coverage</div>
+          <div class="region-tags">
+            <span class="tag primary">Delhi NCR</span>
+            <span class="tag primary">Uttar Pradesh</span>
+            <span class="tag primary">Haryana</span>
+            <span class="tag primary">Rajasthan</span>
+            <span class="tag primary">Punjab</span>
+          </div>
+        </div>
+        <div class="region-label">Also Available In</div>
+        <div class="region-tags">
+          <span class="tag">Mumbai</span>
+          <span class="tag">Bangalore</span>
+          <span class="tag">Hyderabad</span>
+          <span class="tag">Chennai</span>
+          <span class="tag">Kolkata</span>
+          <span class="tag">& All India</span>
+        </div>
+      </div>
+    </div>
+    <div class="coverage-note">
+      <h4>📍 We Come To You</h4>
+      <p>We are a mobile team — no fixed office. We set up wherever the job is. Whether it's a house in Noida or a factory in Pune, we show up and get it done.<br/><br/>Call or WhatsApp us with your location and we'll confirm availability immediately.</p>
+      <br/>
+      <a href="https://wa.me/917070812717?text=Hi%2C%20I%20need%20waterproofing%20services" target="_blank" class="btn-primary" style="font-size:0.82rem; padding:11px 20px;">💬 Check Availability</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="fade">
+      <div class="s-label">Get In Touch</div>
+      <div class="s-title">Book a Free<br/>Site Inspection</div>
+      <p class="s-sub">Free visit. Free assessment. Detailed quote — no obligation.</p>
+
+      <div class="phones">
+        <a href="tel:+919891973959" class="phone-row">
+          <span class="phone-icon">📞</span>
+          <div class="phone-info">
+            <span class="phone-num">+91 98919 73959</span>
+            <span class="phone-tag">Primary · Calls</span>
+          </div>
+          <span style="font-size:0.75rem;color:var(--blue);font-weight:600;">Call →</span>
+        </a>
+        <a href="https://wa.me/917070812717?text=Hi%2C%20I%20need%20waterproofing%20services" target="_blank" class="phone-row">
+          <span class="phone-icon">💬</span>
+          <div class="phone-info">
+            <span class="phone-num">+91 70708 12717</span>
+            <span class="phone-tag">WhatsApp</span>
+          </div>
+          <span style="font-size:0.75rem;color:#25D366;font-weight:600;">Chat →</span>
+        </a>
+        <a href="tel:+919123191873" class="phone-row">
+          <span class="phone-icon">📱</span>
+          <div class="phone-info">
+            <span class="phone-num">+91 91231 91873</span>
+            <span class="phone-tag">Alternate Contact</span>
+          </div>
+          <span style="font-size:0.75rem;color:var(--gray);font-weight:600;">Call →</span>
+        </a>
+      </div>
+
+      <div class="contact-perks">
+        <div class="perk"><div class="perk-dot"></div> Response within 2 hours</div>
+        <div class="perk"><div class="perk-dot"></div> 100% free site visit & inspection</div>
+        <div class="perk"><div class="perk-dot"></div> Detailed quote — no vague estimates</div>
+        <div class="perk"><div class="perk-dot"></div> 10-year warranty on all completed work</div>
+      </div>
+    </div>
+
+    <div class="cform fade">
+      <div class="cform-title">Request a Free Quote</div>
+      <p class="cform-sub">Fill this in and we'll call you within 2 hours.</p>
+      <div class="fg">
+        <label>Your Name *</label>
+        <input type="text" id="fname" placeholder="e.g. Rahul Sharma"/>
+      </div>
+      <div class="fg">
+        <label>Phone Number *</label>
+        <input type="tel" id="fphone" placeholder="Your WhatsApp / call number"/>
+      </div>
+      <div class="fg">
+        <label>Type of Problem</label>
+        <select id="fservice">
+          <option value="">Select a service</option>
+          <option>Terrace / Roof Leakage</option>
+          <option>Basement Seepage</option>
+          <option>Bathroom Waterproofing</option>
+          <option>Underground Water Tank</option>
+          <option>Garden / Rooftop Planter</option>
+          <option>Wall Dampness</option>
+          <option>Commercial Building</option>
+          <option>Swimming Pool</option>
+          <option>Other / Not Sure</option>
+        </select>
+      </div>
+      <div class="fg">
+        <label>Your Location</label>
+        <input type="text" id="floc" placeholder="City, area or state"/>
+      </div>
+      <div class="fg">
+        <label>Brief Description (optional)</label>
+        <textarea id="fmsg" placeholder="Describe the issue briefly..."></textarea>
+      </div>
+      <button class="fsub" onclick="submitForm()">Send My Request →</button>
+      <div class="fnote">We never share your details. No spam, ever.</div>
+      <div class="success-msg" id="successMsg">✅ Done! We'll call you within 2 hours. You can also WhatsApp us directly.</div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews fade">
+  <div class="s-label">Client Reviews</div>
+  <div class="s-title">What Our Clients Say</div>
+  <div class="reviews-grid">
+    <div class="rev-card">
+      <div class="stars">★★★★★</div>
+      <blockquote>"Terrace had been leaking for 3 years. Two other contractors failed. RN fixed it in one visit and it has been bone dry since. The 10-year warranty is the real deal."</blockquote>
+      <div class="reviewer">
+        <div class="r-av">RS</div>
+        <div>
+          <div class="r-name">Rakesh Sharma</div>
+          <div class="r-loc">Dwarka, New Delhi</div>
+        </div>
+      </div>
+    </div>
+    <div class="rev-card">
+      <div class="stars">★★★★★</div>
+      <blockquote>"Basement flooded every monsoon without fail. Called RN and it has not happened once since. Professional work, clean execution, zero mess left behind."</blockquote>
+      <div class="reviewer">
+        <div class="r-av">AP</div>
+        <div>
+          <div class="r-name">Anil Pandey</div>
+          <div class="r-loc">Sector 62, Noida</div>
+        </div>
+      </div>
+    </div>
+    <div class="rev-card">
+      <div class="stars">★★★★★</div>
+      <blockquote>"Bathroom was leaking into the ceiling below. Fixed without breaking a single tile. Transparent pricing, honest team. Will call them again for our second property."</blockquote>
+      <div class="reviewer">
+        <div class="r-av">SM</div>
+        <div>
+          <div class="r-name">Sunita Mehta</div>
+          <div class="r-loc">Gurugram, Haryana</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="review-leave">
+    <div>
+      <h3>Worked With Us? Share Your Experience.</h3>
+      <p>Your honest review helps other homeowners make a confident, informed decision.</p>
+    </div>
+    <a href="https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID" target="_blank" class="btn-review">⭐ Leave a Google Review</a>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section class="founder fade">
+  <div class="founder-inner">
+    <div class="founder-av">NA</div>
+    <div>
+      <div class="founder-quote">
+        "I started this company because I was tired of watching families suffer from leaks that were <span>fixed wrong the first time.</span>"
+      </div>
+      <p class="founder-body">
+        Water damage is not just a structural problem — it disturbs your home, your peace, and your savings. Over the years I have seen too many cases where cheap contractors slapped a coat of paint over a serious problem and disappeared. That is not how we work. At RN Waterproofing Solutions, we diagnose the root cause, use only certified materials, and stand behind every job with a 10-year written warranty. If it leaks, we come back. No phone tag, no excuses. That is the standard I hold my team to every single day — because your home deserves nothing less.
+      </p>
+      <div class="founder-name">Naushad Alam</div>
+      <div class="founder-title">Founder · RN Waterproofing Solutions</div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOAT -->
+<div class="float">
+  <a href="https://wa.me/917070812717?text=Hi%2C%20I%20need%20waterproofing%20services" target="_blank" class="fbtn fwa" title="WhatsApp">💬</a>
+  <a href="tel:+919891973959" class="fbtn fcall" title="Call">📞</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">
+        <span class="logo-top" style="font-family:'Fraunces',serif;font-size:1.3rem;color:#fff;font-weight:900;">RN <span style="color:#5ab4e8;">Waterproofing</span></span>
+      </div>
+      <p class="footer-desc">Pan India waterproofing specialists. Long-lasting solutions for every water leakage problem — backed by a 10-year written warranty. Based in Delhi NCR, available nationwide.</p>
+    </div>
+    <div class="fcol">
+      <h4>Services</h4>
+      <a href="#contact">Terrace Waterproofing</a>
+      <a href="#contact">Basement Waterproofing</a>
+      <a href="#contact">Bathroom Waterproofing</a>
+      <a href="#contact">UG Tank Waterproofing</a>
+      <a href="#contact">Garden Waterproofing</a>
+      <a href="#contact">Commercial Projects</a>
+    </div>
+    <div class="fcol">
+      <h4>Contact</h4>
+      <a href="tel:+919891973959">📞 98919 73959 (Primary)</a>
+      <a href="https://wa.me/917070812717" target="_blank">💬 70708 12717 (WhatsApp)</a>
+      <a href="tel:+919123191873">📱 91231 91873 (Alternate)</a>
+      <a href="#contact">📋 Request Free Quote</a>
+      <a href="https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID" target="_blank">⭐ Leave a Review</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2025 RN Waterproofing Solutions. All rights reserved. · Delhi · Noida · Gurugram · Faridabad · Ghaziabad · Pan India
+  </div>
+</footer>
+
+<script>
+  // Scroll fade-in
+  const fades = document.querySelectorAll('.fade');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) setTimeout(() => e.target.classList.add('in'), i * 60);
+    });
+  }, { threshold: 0.07 });
+  fades.forEach(el => obs.observe(el));
+
+  // Form → WhatsApp
+  function submitForm() {
+    const name = document.getElementById('fname').value.trim();
+    const phone = document.getElementById('fphone').value.trim();
+    const service = document.getElementById('fservice').value;
+    const loc = document.getElementById('floc').value.trim();
+    const msg = document.getElementById('fmsg').value.trim();
+    if (!name || !phone) { alert('Please enter your name and phone number.'); return; }
+    const text = `Hi, I need waterproofing services.%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AService: ${encodeURIComponent(service||'Not specified')}%0ALocation: ${encodeURIComponent(loc||'Not specified')}%0ADetails: ${encodeURIComponent(msg||'None')}`;
+    document.getElementById('successMsg').style.display = 'block';
+    setTimeout(() => window.open(`https://wa.me/917070812717?text=${text}`, '_blank'), 700);
+  }
+</script>
+</body>
+</html>
